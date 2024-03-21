@@ -1,0 +1,86 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url('ibaad.jpg');
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -1; /* Ensure the image stays behind the content */
+  opacity: 0.5; /* Set the opacity of the image */
+}
+
+/* Add styles for your navigation, header, main content, and footer */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: rgba(0, 140, 186, 0.8); /* Transparent background color for navigation */
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    background-color: rgba(0, 95, 115, 0.8); /* Transparent background color for navigation links */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(0, 95, 115, 1); /* Solid background color on hover */
+}
+
+header {
+    background: rgba(51, 51, 51, 0.8); /* Transparent background color for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Transparent background color for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+}
